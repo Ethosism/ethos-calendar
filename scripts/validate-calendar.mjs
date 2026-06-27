@@ -122,6 +122,9 @@ function validateCalendar() {
   requireDocContains("docs/annual-observance-calendar.md", [
     "Day of First Truth",
     "Day of Vows",
+    "Festival of First Truth",
+    "Commons Festival",
+    "Festival of Future Generations",
     "Day of Remembrance",
     "Long Night of Review",
     "First Sunday",
@@ -178,10 +181,39 @@ function validateCalendar() {
 
   uniqueIds(annual.seasons ?? [], "annual.seasons");
   uniqueIds(annual.high_observances ?? [], "annual.high_observances");
+  uniqueIds(annual.festivals ?? [], "annual.festivals");
   uniqueIds(annual.monthly_observances ?? [], "annual.monthly_observances");
   for (const required of ["day-first-truth", "day-vows", "day-remembrance", "long-night-review", "closing-record"]) {
     if (!(annual.high_observances ?? []).some((item) => item.id === required)) {
       fail(`annual.high_observances is missing ${required}`);
+    }
+  }
+  for (const required of [
+    "festival-first-truth",
+    "vow-week",
+    "festival-formation",
+    "commons-festival",
+    "festival-mercy-repair",
+    "festival-measure",
+    "remembrance-tide",
+    "festival-future-generations",
+    "long-night",
+    "closing-of-record"
+  ]) {
+    if (!(annual.festivals ?? []).some((item) => item.id === required)) {
+      fail(`annual.festivals is missing ${required}`);
+    }
+  }
+  for (const festival of annual.festivals ?? []) {
+    for (const field of ["name", "date_rule", "tone", "theme", "gathering", "children", "public_act"]) {
+      if (!festival[field]) {
+        fail(`annual.festivals.${festival.id} is missing ${field}`);
+      }
+    }
+    for (const field of ["customs", "foods", "symbols"]) {
+      if (!Array.isArray(festival[field]) || festival[field].length === 0) {
+        fail(`annual.festivals.${festival.id} needs ${field}`);
+      }
     }
   }
 }

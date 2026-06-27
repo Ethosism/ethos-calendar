@@ -46,6 +46,23 @@ No observance may require public confession. No observance replaces medical, leg
 | Dec solstice | Long Night of Review | Review the year in truth, repair, stewardship, service, learning, and memory. |
 | Dec 31 | Closing of the Record | Record what was kept, what failed, what was repaired, and what must begin next. |
 
+## Festivals
+
+Festivals are embodied observances: gathering, food, symbols, children, public action, and beauty. They are not only review prompts.
+
+| Date | Festival | Tone | Core customs |
+|---|---|---|---|
+| Jan 1 | Festival of First Truth | Solemn morning, celebratory meal | Light one lamp, write the first fact/duty/repair, share a meal. |
+| Jan 1 - Jan 7 | Vow Week | Solemn arc | Review vows, mark keep/repair/revise/release, clarify one commitment. |
+| Weekend nearest Mar equinox | Festival of Formation | Bright, disciplined, intergenerational | Teach a skill, honor a mentor, give children a small responsibility. |
+| Weekend nearest Jun solstice | Commons Festival | Public, useful, joyful | Repair or maintain something shared, then eat together. |
+| Aug 15 | Festival of Mercy And Repair | Restorative, careful, hopeful | Begin restitution or repair while keeping necessary boundaries. |
+| Weekend nearest Sep equinox | Festival of Measure | Harvest, accounting, gratitude | Review provision, debts, promises, and share surplus where possible. |
+| Oct 31 - Nov 1 | Remembrance Tide | Solemn, tender, memory-bearing | Hold a mortality vigil, speak names, preserve one memory. |
+| Dec 1 | Festival of Future Generations | Child-honoring, long-view, protective | Name duties owed forward and repair or fund something that outlasts the year. |
+| Dec solstice | Long Night | Quiet, candlelit, reflective | Turn down light, read the year record, tell stories, rest. |
+| Dec 31 | Closing of the Record | Honest, spare, preparatory | Record kept/failed/repaired/carried-forward and prepare the next first page. |
+
 ## Monthly Observances
 
 | Date rule | Observance | Practice |

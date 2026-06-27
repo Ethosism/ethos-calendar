@@ -69,6 +69,7 @@ This first version is a conceptual seed, not a finished ritual system. It establ
 - monthly observances
 - seasonal themes
 - annual days
+- festivals
 - life rites
 - governance constraints
 
