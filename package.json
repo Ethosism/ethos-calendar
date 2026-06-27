@@ -1,0 +1,17 @@
+{
+  "name": "@ethosism/ethos-calendar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "The time and recurrence layer of Ethosism.",
+  "scripts": {
+    "validate": "node scripts/validate-calendar.mjs"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "yaml": "^2.6.1"
+  }
+}
