@@ -42,6 +42,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
+        "annual_observance_calendar",
         "daily_weekly_rule",
         "year_cycle",
         "life_rites",
@@ -50,6 +51,7 @@
         "release_checklist"
       ],
       "properties": {
+        "annual_observance_calendar": { "$ref": "#/$defs/docPath" },
         "daily_weekly_rule": { "$ref": "#/$defs/docPath" },
         "year_cycle": { "$ref": "#/$defs/docPath" },
         "life_rites": { "$ref": "#/$defs/docPath" },

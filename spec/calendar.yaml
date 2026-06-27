@@ -8,6 +8,7 @@ authority:
   language: "Ethra can name recurring practices but is not required for participation."
   practice: "Calendar practices must remain concrete, non-coercive, and reviewable."
 source_docs:
+  annual_observance_calendar: "docs/annual-observance-calendar.md"
   daily_weekly_rule: "docs/daily-weekly-rule.md"
   year_cycle: "docs/year-cycle.md"
   life_rites: "docs/life-rites.md"

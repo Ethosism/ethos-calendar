@@ -19,6 +19,7 @@ Use this checklist before treating a calendar version as production ready.
 3. Confirm public docs are coherent.
 
    - [daily-weekly-rule.md](daily-weekly-rule.md)
+   - [annual-observance-calendar.md](annual-observance-calendar.md)
    - [year-cycle.md](year-cycle.md)
    - [life-rites.md](life-rites.md)
    - [governance.md](governance.md)

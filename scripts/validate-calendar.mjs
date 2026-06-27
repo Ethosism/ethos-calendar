@@ -78,6 +78,7 @@ function validateMarkdownLinks() {
 
 function validateCalendar() {
   const calendar = YAML.parse(readText("spec/calendar.yaml"));
+  const annual = YAML.parse(readText("spec/annual-observances.yaml"));
   const schema = JSON.parse(readText("spec/calendar.schema.json"));
   const ajv = new Ajv2020({ allErrors: true, strict: true });
   const validate = ajv.compile(schema);
@@ -118,6 +119,14 @@ function validateCalendar() {
     "Review",
     "forced confession"
   ]);
+  requireDocContains("docs/annual-observance-calendar.md", [
+    "Day of First Truth",
+    "Day of Vows",
+    "Day of Remembrance",
+    "Long Night of Review",
+    "First Sunday",
+    "No observance may require public confession"
+  ]);
   requireDocContains("docs/year-cycle.md", [
     "Truth Audit",
     "Household Review",
@@ -156,6 +165,7 @@ function validateCalendar() {
   const boundaryText = [
     ...(calendar.non_goals ?? []),
     ...(calendar.quality_gates ?? []),
+    ...(annual.boundaries ?? []),
     readText("docs/governance.md")
   ].join("\n").toLowerCase();
   for (const boundary of ["confession", "coercion", "medical", "legal", "surveillance", "ethra fluency"]) {
@@ -165,6 +175,15 @@ function validateCalendar() {
   }
 
   validateMarkdownLinks();
+
+  uniqueIds(annual.seasons ?? [], "annual.seasons");
+  uniqueIds(annual.high_observances ?? [], "annual.high_observances");
+  uniqueIds(annual.monthly_observances ?? [], "annual.monthly_observances");
+  for (const required of ["day-first-truth", "day-vows", "day-remembrance", "long-night-review", "closing-record"]) {
+    if (!(annual.high_observances ?? []).some((item) => item.id === required)) {
+      fail(`annual.high_observances is missing ${required}`);
+    }
+  }
 }
 
 validateCalendar();

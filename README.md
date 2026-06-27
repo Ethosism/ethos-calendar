@@ -37,8 +37,10 @@ scripts/
   validate-calendar.mjs   local and CI validation
 spec/
   calendar.yaml        machine-readable calendar structure
+  annual-observances.yaml standing annual event cycle
   calendar.schema.json JSON Schema for the calendar source
 docs/
+  annual-observance-calendar.md named seasons and annual events
   adoption-guide.md    individual, household, and group use
   daily-weekly-rule.md daily and weekly rhythm
   year-cycle.md        monthly, seasonal, and annual cycle

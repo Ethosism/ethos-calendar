@@ -4,5 +4,6 @@
 
 - Seeded the Ethos Calendar as the time and recurrence layer of Ethosism.
 - Added the machine-readable calendar source.
+- Added the annual observance calendar source.
 - Added docs for the daily and weekly rule, year cycle, life rites, governance, adoption, and release.
 - Added local validation and GitHub Actions CI.
